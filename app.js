@@ -1,4 +1,5 @@
 const http = require('http');
+const fs = require('fs');
 
 const server = http.createServer((req, res) => {
     url = req.url;
@@ -33,7 +34,7 @@ const server = http.createServer((req, res) => {
 
         req.on("end", () => {
             input = Buffer.concat(data).toString();
-            console.log(input);
+            fs.writeFileSync("inputs.txt", input.split('=')[1]);
         })
 
         res.statusCode = '302';
