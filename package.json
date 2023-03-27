@@ -1,5 +1,23 @@
 {
   "devDependencies": {
     "@types/node": "^18.15.9"
-  }
+  },
+  "name": "node-tutorial",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manasacharyya25/Node-Tutorial.git"
+  },
+  "author": "Manas Acharyya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manasacharyya25/Node-Tutorial/issues"
+  },
+  "homepage": "https://github.com/manasacharyya25/Node-Tutorial#readme"
 }
