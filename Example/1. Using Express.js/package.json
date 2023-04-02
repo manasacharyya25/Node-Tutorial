@@ -1,0 +1,15 @@
+{
+  "name": "expressjs-intro",
+  "version": "1.0.0",
+  "description": "A simple webapp with Express Js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "author": "Manas Acharyya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

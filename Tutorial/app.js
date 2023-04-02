@@ -30,12 +30,12 @@ const server = http.createServer((req, res) => {
 
         req.on("data", (chunk) => {
             data.push(chunk)
-        })
+        });
 
         req.on("end", () => {
             input = Buffer.concat(data).toString();
             fs.writeFileSync("inputs.txt", input.split('=')[1]);
-        })
+        });
 
         res.statusCode = '302';
         res.setHeader("Location", "/input");
