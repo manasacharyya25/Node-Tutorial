@@ -125,4 +125,39 @@
     module.exports = router
 
 ### 10. Parse Incoming Request Body using `body-parser`
+
+1. Install body-parser package and add it to top of the middleware chain 
+`npm install body-parser --save`
+
+`
+
+    const bodyParser = require("body-parser");
+
+    app.use(bodyParser.urlencoded({extednded: false}));
+
+
+
 ### 11. Serving HTML Files
+
+1. HTML Files can be located in a `views` folder and can be accessed in the app as 
+
+` 
+
+    const path = require('path');
+
+    res.sendFile(path.join(rootDir,"views", "notes.html"))
+
+
+
+### 12. Serving Files Statically
+
+1. This basically means to allow files in the file system to be accessed in our app. For eg stylesheets or js files in the html files, without any security authentication
+
+2. Introduce a public folder that contains files to be available statically
+
+3. In app.js specify static folder as 
+
+    ` app.use(express.static("public")); `
+
+
+

@@ -1,1 +1,2 @@
-Example/2. Complete Express.js Udemy Module/node_modules/*
+Example/2. Complete Express.js Udemy Module/node_modules/**
+node_modules/**
